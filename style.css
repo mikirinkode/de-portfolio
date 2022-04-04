@@ -115,6 +115,23 @@ body {
     color: var(--surface-on-background);
 }
 
+.custom-icon i{
+    color: var(--primary-color);
+    display: block;
+    block-size: 100;
+    transition: all 0.3s ease;
+    margin: 16px 8px;
+    padding: 16px;
+}
+
+.custom-icon a{
+    text-decoration: none;
+}
+
+.custom-icon i:hover {
+    color: var(--primary-color);
+}
+
 #projects {
     text-align: center;
     margin: 32px 0px;
