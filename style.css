@@ -100,17 +100,19 @@ body{
     background-color: #1E2B38;
     border-radius: 16px;
     box-sizing: border-box;
+}
 
-    
+.project-tile a{
     text-decoration: none;
     color: var(--text-color);
 }
 
-.fake-image{
+.mockup-image{
     background-color: #32475B;
     width: auto;
     height: 250px;
     border-radius: 16px;
+    object-fit: contain;
 }
 
 #contact{
