@@ -1,146 +1,181 @@
-:root{
+:root {
     --primary-color: #00F9FF;
     --background-color: #22303F;
-    --surface-on-background: #0B1B28;
+    --surface-on-background: #17212B;
+    --card-background-color: #1E2B38;
     --text-color: #F2F6FD;
-
+    --border-radius: 16px;
 }
+
 /* 1200px / 16px = 75em */
 @media (max-width: 75em) {
     html {
-      font-size: 100%;
+        font-size: 100%;
     }
-  }
-  
-  /* 980px / 16px = 61.25em */
-  @media (max-width: 61.25em) {
+}
+
+/* 980px / 16px = 61.25em */
+@media (max-width: 61.25em) {
     html {
-      font-size: 80%;
+        font-size: 80%;
     }
-  }
-  
+}
 
-  /* BASE STYLES */
 
-body{
+/* BASE STYLES */
+
+body {
     margin: 0px;
     background-color: var(--background-color);
     color: var(--text-color);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-#navbar{
-    width: 100%;
-  display: flex;
-  justify-content: flex-end;
-    display: block;
-    overflow: hidden;
-    position:fixed;
+#navbar {
+    position: fixed;
+    left: 0px;
     background-color: var(--surface-on-background);
+    width: 100%;
+    text-align: center;
 }
-
-#navbar ul{
-    display: flex;
+#navbar ul {
     margin: 0;
     padding: 0;
-    overflow: hidden;
     list-style-type: none;
-    background-color: var(--surface-on-background);
+    display: inline-block;
 }
-
-#navbar li{
-    display: inline;
-    float: left;
+#navbar ul li {
+    margin: 8px;
+    padding: 0;
+    float:left;
 }
-
-#navbar a{
-    display: block;
-    color: var(--text-color);
+#navbar ul li a {
     text-decoration: none;
-    text-align: center;
     padding: 4px 8px;
-    margin: 8px 4px;
+    display: block;
+    color: #FFF;
+    text-align: center;
+    transition: all 0.3s ease;
 }
 
-#navbar a:hover{
+#navbar a:hover {
     color: var(--background-color);
     text-decoration: none;
-    text-align: center;    
+    text-align: center;
     border-radius: 8px;
     background-color: var(--primary-color);
 }
 
-#welcome-section{
-        flex-direction: column;
-        justify-content: center;
+#welcome-section {
+    flex-direction: column;
+    justify-content: center;
     display: flex;
     align-items: center;
     height: 100vh;
     overflow: auto;
     text-align: center;
-    background-color: #1E2B38;
-    border-radius: 16px;
+    background-color: var(--surface-on-background);
+    border-radius: var(--border-radius);
 }
 
-#welcome-section h1{
+#welcome-section h1 {
     color: var(--primary-color);
 }
 
-#projects{
-    text-align: center;
-    margin: auto;
-    margin-top: 64px;
+
+#sidebar {
+    display: inline-block;
+    margin: 16px;
+    background-color:  var(--surface-on-background);
+    border-radius: var(--border-radius);
+    padding: 16px;
+    position: fixed;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 
-.project-tile{
+.social-media i{
+    color: var(--primary-color);
+    display: block;
+    block-size: 100;
+    transition: all 0.3s ease;
+    margin: 16px 8px;
+    padding: 16px;
+}
+
+.social-media a{
+    text-decoration: none;
+}
+
+.social-media i:hover {
+    background-color: var(--primary-color);
+    border-radius: var(--border-radius);
+    color: var(--surface-on-background);
+}
+
+#projects {
+    text-align: center;
+    margin: 32px 0px;
+}
+
+.project-tile {
     margin: 16px;
     display: inline-block;
     text-align: center;
+    align-items: center;
     padding: 16px;
     width: 300px;
-    background-color: #1E2B38;
-    border-radius: 16px;
+    background-color:  var(--card-background-color);
+    border-radius: var(--border-radius);
     box-sizing: border-box;
+    vertical-align: middle;
 }
 
-.project-tile a{
+.project-tile a {
     text-decoration: none;
     color: var(--text-color);
 }
 
-.mockup-image{
-    background-color: #32475B;
+
+.mockup-image {
     width: auto;
     height: 250px;
-    border-radius: 16px;
+    border-radius: var(--border-radius);
     object-fit: contain;
 }
 
-#contact{
-    margin: auto;
-    text-align: center;
+.mockup-image:hover {
+    height: 300px;
 }
 
-#contact-form{
+#contact {
+    margin: auto;
+    text-align: center;
+    background-color: var(--surface-on-background);
+    padding: 24px;
+}
+
+#contact-form {
     text-align: start;
     margin: 16px;
     display: inline-block;
-    background-color: #1E2B38;
-    border-radius: 16px;
+    background-color:  var(--card-background-color);
+    border-radius: var(--border-radius);
     padding: 16px;
 }
 
-#social-media{
-    
-    margin: 16px;
-    display: inline-block;
-    background-color: #1E2B38;
-    border-radius: 16px;
-    padding: 16px;
+
+footer {
+    background-color:  var(--surface-on-background);
+    padding: 32px 16px 64px 16px;
 }
 
-footer{
-    margin-top: 32px;
-    background-color: #1E2B38;
-    text-align: center;
-    padding: 25px;
+#created-with{
+    float: left;
+}
+
+#copyright{
+    float: right;
 }

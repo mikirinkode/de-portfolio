@@ -4,12 +4,17 @@
 <head>
     <title>MikirinKode</title>
     <link rel="stylesheet" href="style.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
 </head>
 
 <body>
     <!-- START NAV -->
     <nav id="navbar">
         <ul>
+            <li>
+                <a href="#welcome-section">About</a>
+            </li>
             <li>
                 <a href="#projects">Project</a>
             </li>
@@ -20,9 +25,29 @@
     </nav>
     <!-- END NAV -->
 
+    <!-- START SIDE BAR -->
+    <aside id="sidebar">
+        <div class="social-media">
+            <a href="https://github.com/mikirinkode" target="_blank">
+                <i class="fi fi-brands-github"></i>
+            </a>
+        </div>
+        <div class="social-media">
+            <a href="https://www.linkedin.com/in/muhammad-wafa-a-883915194/" target="_blank">
+                <i class="fi fi-brands-linkedin"></i>
+            </a>
+        </div>
+        <div class="social-media">
+            <a href="https://mikirinkode.online/" target="_blank">
+                <i class="fi fi-sr-globe"></i>
+            </a>
+        </div>
+    </aside>
+    <!-- END SIDE BAR -->
+
     <!-- START WELCOME SECTION -->
     <section id="welcome-section">
-        <h1>Hello There</h1>
+        <img src="https://raw.githubusercontent.com/mikirinkode/de-portfolio/main/assets/hello.png" width="50%">
         <p>My name is Wafa, i'm a person who enjoy developing a mobile apps 📱 using kotlin and flutter. <br>I also
             enjoy designing User Interface.</p>
     </section>
@@ -30,14 +55,15 @@
 
     <!-- START PROJECT SECTION -->
     <section id="projects">
-        <h2>What i Love to do</h2>
+        <h2>Things that i've build with passion</h2>
 
         <!-- FINANCIAR -->
         <div class="project-tile">
             <a id="profile-link" href="https://github.com/mikirinkode/Financiar" target="_blank">
                 <img class="mockup-image"
+                alt="Financiar App Mockup"
                     src="https://raw.githubusercontent.com/mikirinkode/de-portfolio/main/assets/financiar_mockup.png">
-                <h3>Financiar</h3>
+                <h3>Financiar - Personal Financial Manager</h3>
                 <p>An android financial application that has several features such as recording every incoming and
                     outgoing transaction as well as managing and planning expenses.</p>
             </a>
@@ -47,6 +73,7 @@
         <div class="project-tile">
             <a id="profile-link" href="https://github.com/mikirinkode/sports_venue_booking_app" target="_blank">
                 <img class="mockup-image"
+                alt="Spod App Mockup"
                     src="https://raw.githubusercontent.com/mikirinkode/de-portfolio/main/assets/spod_mockup.png">
                 <h3>Spod - Sports Venue Booking App</h3>
                 <p>An android application which allow user to book a sport venue from anywhere at anytime using mobile
@@ -58,8 +85,9 @@
         <div class="project-tile">
             <a id="profile-link" href="https://github.com/mikirinkode/KotakFilm-DicodingMADE" target="_blank">
                 <img class="mockup-image"
+                alt="KotakFilm App Mockup"
                     src="https://raw.githubusercontent.com/mikirinkode/de-portfolio/main/assets/kotakfilm_mockup.png">
-                <h3>KotakFilm - Movie Catalogue App</h3>
+                <h3>KotakFilm - Movie Catalogue</h3>
                 <p>Explore various trending movies and tv shows or your favorite movies and manage the list of movies
                     you want to play in 1 app.</p>
             </a>
@@ -71,13 +99,6 @@
     <!-- START CONTACT SECTION -->
     <section id="contact">
         <h2>Contact Me</h2>
-
-
-        <div id="social-media">
-            <p>Github</p>
-            <p>Linkedin</p>
-            <p>website</p>
-        </div>
 
         <div id="contact-form">
             <form>
@@ -99,7 +120,13 @@
 
     <!-- START FOOTER -->
     <footer>
-        <p>&copy; 2021-2022 mikirinkode</p>
+        <span id="created-with">
+            Created with &lt&gtCode&lt/&gt & 
+                <i class="fi fi-sr-heart" alt="love-icon"></i>
+        </span>
+        <span id="copyright">
+                &copy; 2021-2022 mikirinkode
+        </span>
     </footer>
     <!-- END FOOTER -->
 </body>
