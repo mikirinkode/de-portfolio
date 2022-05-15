@@ -2,4 +2,4 @@
 
 Personal Portfolio Web
 
-Preview: <a href="mikirinkode.github.io">mikirinkode.github.io</a>
+Preview: <a href="https://mikirinkode.github.io/">mikirinkode.github.io</a>
