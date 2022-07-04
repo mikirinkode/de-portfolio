@@ -68,8 +68,9 @@
         flex-direction: column;
     }
     
-
-
+    .contact-form {
+        width: 80%;
+    }
 }
 
 @media screen and (max-width: 950px) {
