@@ -2,10 +2,13 @@
 <html lang="en">
 
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MikirinKode</title>
     <link rel="stylesheet" href="style.css">
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css'>
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css'>
 </head>
 
 <body>
@@ -48,7 +51,7 @@
     <!-- START WELCOME SECTION -->
     <section id="welcome-section">
         <span>
-            <img src="https://raw.githubusercontent.com/mikirinkode/de-portfolio/main/assets/phone.png" width="30%">
+            <img src="https://raw.githubusercontent.com/mikirinkode/de-portfolio/main/assets/phone.png" width="50%">
             <h1>
                 Hello There
             </h1>
@@ -60,63 +63,91 @@
 
     <!-- START PROJECT SECTION -->
     <section id="projects">
-        <h2>Things that i've build with passion</h2>
+        <h2>Things that i love to build with passion</h2>
 
-        <!-- FINANCIAR -->
+        
+        <!-- CODEHUB -->
         <div class="project-tile">
-            <a id="profile-link" href="https://github.com/mikirinkode/Financiar" target="_blank">
-                <img class="mockup-image" alt="Financiar App Mockup"
-                    src="https://raw.githubusercontent.com/mikirinkode/de-portfolio/main/assets/financiar_mockup.png">
-                <h3>Financiar - Personal Financial Manager</h3>
-                <p>An android financial application that has several features such as recording every incoming and
-                    outgoing transaction as well as managing and planning expenses.</p>
+            <a id="profile-link" href="https://github.com/mikirinkode/CodeHub-DicodingBFAA" target="_blank">
+                <img class="mockup-image" alt="CodeHub App Mockup"
+                    src="https://raw.githubusercontent.com/mikirinkode/mikirinkode.github.io/main/assets/codehub.png">
+
             </a>
         </div>
+        
+        <!-- KOTAKMOVIE -->
+        <div class="project-tile">
+            <a id="profile-link" href="https://github.com/mikirinkode/KotakMovie-DicodingMADE" target="_blank">
+                <img class="mockup-image" alt="KotakMovie App Mockup"
+                    src="https://raw.githubusercontent.com/mikirinkode/mikirinkode.github.io/main/assets/kotakmovie.png">
 
+            </a>
+        </div>
+        
         <!-- SPOD -->
         <div class="project-tile">
             <a id="profile-link" href="https://github.com/mikirinkode/sports_venue_booking_app" target="_blank">
                 <img class="mockup-image" alt="Spod App Mockup"
-                    src="https://raw.githubusercontent.com/mikirinkode/de-portfolio/main/assets/spod_mockup.png">
-                <h3>Spod - Sports Venue Booking App</h3>
-                <p>An android application which allow user to book a sport venue from anywhere at anytime using mobile
-                    phone.</p>
+                    src="https://raw.githubusercontent.com/mikirinkode/mikirinkode.github.io/main/assets/spod.png">
+
+            </a>
+        </div>
+        
+        <!-- TEXT RECOGNITION -->
+        <div class="project-tile">
+            <a id="profile-link" href="https://github.com/mikirinkode/TextRecognition-Android" target="_blank">
+                <img class="mockup-image" alt="Text Recognition App Mockup"
+                    src="https://raw.githubusercontent.com/mikirinkode/mikirinkode.github.io/main/assets/textrecognition.png">
+
+            </a>
+        </div>
+        
+        <!-- METAPOL -->
+        <div class="project-tile">
+            <a id="profile-link" href="https://github.com/Coolva-ID/Metapol" target="_blank">
+                <img class="mockup-image" alt="METAPOL App Mockup"
+                    src="https://raw.githubusercontent.com/mikirinkode/mikirinkode.github.io/main/assets/metapol.png">
+
             </a>
         </div>
 
-        <!-- KOTAKFILM -->
-        <div class="project-tile">
-            <a id="profile-link" href="https://github.com/mikirinkode/KotakFilm-DicodingMADE" target="_blank">
-                <img class="mockup-image" alt="KotakFilm App Mockup"
-                    src="https://raw.githubusercontent.com/mikirinkode/de-portfolio/main/assets/kotakfilm_mockup.png">
-                <h3>KotakFilm - Movie Catalogue</h3>
-                <p>Explore various trending movies and tv shows or your favorite movies and manage the list of movies
-                    you want to play in 1 app.</p>
-            </a>
-        </div>
+
     </section>
     <!-- END PROJECT SECTION -->
 
 
     <!-- START CONTACT SECTION -->
-    <section id="contact">
-        <h2>Contact Me</h2>
+    <!-- <div class="alert-error">
+        <span>Something went wrong! Please try again.</span>
+    </div>
 
-        <div id="contact-form">
-            <form>
-                <label for="input-name">Name: </label><br>
-                <input id="input-name" type="text" placeholder="Your name">
-                <br>
-                <label for="input-email">Email: </label><br>
-                <input id="input-email" type="text" placeholder="your@mail.com">
-                <br>
-                <label for="input-message">Message: </label><br>
-                <textarea id="input-message" placeholder="Write your message here..." cols="50" rows="5"></textarea>
+    <div class="alert-success">
+        <span>Message Sent! Thank you for contacting me.</span>
+    </div> -->
 
-                <br>
-                <button type="submit">Send Message</button>
+    <section id="contact-section">
+        
+        <!-- <div class="contact-info">
+            <div><i class="fa-solid fa-location-dot"></i> Lampung, Indonesia</div>
+            <div><i class="fa-solid fa-envelope"></i> muhammadwafa105@gmail.com</div>
+        </div> -->
+
+        <div class="contact-form">
+            <h2>Contact Me</h2>
+            <form class="contact" action="" method="post">
+        
+
+                <label>Name: <input class="text-box" type="text" name="input-name" placeholder="Your Name" required /></label>
+                <label>Email: <input class="text-box" type="email" name="input-email" placeholder="example@mail.com" required /></label>
+                <label>Message:
+                    <textarea name="input-message" class="text-box" rows="3" placeholder="Write your message here..."></textarea>
+                        </label>
+        
+                                <input type="submit" name="submit" class="send-btn" value="Send Message">
             </form>
         </div>
+
+
     </section>
     <!-- END CONTACT SECTION -->
 
