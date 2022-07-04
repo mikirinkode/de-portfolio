@@ -143,14 +143,7 @@
         <div class="contact-form">
             <h2>Contact Me</h2>
 
-            <div class="contact-info">
-                <div><i class="fa-solid fa-location-dot"></i> Lampung, Indonesia</div>
-                <div><a href="mailto:muhammadwafa105@gmail.com"><i class="fa-solid fa-envelope"></i>
-                        muhammadwafa105@gmail.com</a></div>
-            </div>
-
-            <!-- <form class="contact" onsubmit="sendEmail(); reset(); return false;" method="post"> -->
-            <form class="contact" action="https://formsubmit.co/muhammadwafa105@gmail.com" method="POST">
+            <form class="contact" action="https://formspree.io/f/mgedjvew" method="POST">
                 <label>Name: <input id="name" class="text-box" type="text" name="name" placeholder="Your Name"
                         required /></label>
                 <label>Email: <input id="email" class="text-box" type="email" name="email"
@@ -161,7 +154,7 @@
                 </label>
 
                 <input type="hidden" name="_subject" value="Mail from Contact Form on github portfolio.">
-                <input type="submit" name="submit" class="send-btn" value="Send Message">
+                <input type="submit" class="send-btn" value="Send Message">
             </form>
         </div>
 
@@ -180,23 +173,6 @@
         </span>
     </footer>
     <!-- END FOOTER -->
-
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script>
-        function sendEmail() {
-            Email.send({
-                Host: "smtp.gmail.com",
-                Username: "muhammadwafa105@gmail.com",
-                Password: "password",
-                To: 'them@website.com',
-                From: document.getElementById("email").value,
-                Subject: "New Contact Form Enquiry",
-                Body: "And this is the body"
-            }).then(
-                message => alert(message)
-            );
-        }
-    </script>
 </body>
 
 </html>
