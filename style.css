@@ -24,7 +24,6 @@
 }
 
 body {
-  /* height: 100vh; */
   margin: 0;
   padding: 0;
 
@@ -37,7 +36,6 @@ body {
 
 header.navbar-container {
   width: 100%;
-  /* max-width: 1200px; */
   padding-block: 1rem;
   margin-inline: auto;
 
@@ -67,20 +65,14 @@ header.navbar-container .nav-list ul li {
 }
 
 header.navbar-container .nav-list ul li a {
-  /* padding: 0.5rem 1.5rem;
-  border-radius: 999px; */
   padding: 4px 8px;
   text-decoration: none;
-  /* font-size: 1.05rem;
-  font-weight: 500; */
   color: var(--text-color);
 
   transition: all 0.3s ease;
 }
 
 header.navbar-container .nav-list ul li:hover a {
-  /* background-color: #425c77;
-  color: white; */
   color: var(--background-color);
   text-align: center;
   border-radius: 8px;
@@ -90,22 +82,8 @@ header.navbar-container .nav-list ul li:hover a {
 main {
   flex: 1;
 
-  /* width: 100%; */
-  /* max-width: 1200px; */
-  /* margin-inline: auto; */
-  /* padding: 2rem 4rem; */
-
   display: flex;
   align-items: center;
-}
-
-main #content article {
-  /* margin: 0px 0px 100px 0px; */
-  /* background-color: blue; */
-  /* flex: 1;
-
-  display: flex;
-  align-items: center; */
 }
 
 main #content .title {
@@ -114,10 +92,6 @@ main #content .title {
 
 main #content #about {
   padding: 2rem 4rem;
-
-  /* width: 100%; */
-  /* margin-inline: auto; */
-  /* max-width: 1200px; */
   height: 100vh;
 
   flex: 1;
@@ -151,31 +125,6 @@ main #content #about .greeting p {
   margin-right: 25%;
 }
 
-/* main #content .greeting button {
-  padding: 0.8rem 2.5rem;
-  border: 3px solid transparent;
-  border-radius: 999px;
-  margin-block-start: 1rem;
-
-  background-color: #2d3e50;
-
-  font-family: "Quicksand", sans-serif;
-  text-transform: uppercase;
-  font-size: 1rem;
-  font-weight: 700;
-  color: white;
-
-  cursor: pointer;
-  transition: all 0.15s ease-in;
-} 
-
-main #content .greeting button:hover {
-  border: 3px solid #2d3e50;
-  background-color: transparent;
-
-  color: #2d3e50;
-} */
-
 main aside {
   position: fixed;
   inset-block: 0;
@@ -188,7 +137,6 @@ main aside .social-media {
 }
 
 main aside .social-media ul {
-  /* padding: 1.5rem 1rem; */
   border-top-left-radius: 12px;
   border-bottom-left-radius: 12px;
   margin: auto;
@@ -198,7 +146,6 @@ main aside .social-media ul {
   flex-flow: column nowrap;
   align-items: center;
   justify-content: center;
-  /* gap: 1.5rem; */
 }
 
 main aside .social-media li {
@@ -210,14 +157,8 @@ main aside .social-media li img {
   display: flex;
   block-size: 100;
   transition: all 0.5s ease;
-  /* margin: 8px 8px; */
   padding: 12px;
-
-  /* display: block; */
-  /* text-align: center; */
-  /* display: block; */
   width: 75px;
-  /* margin: 0 auto; */
 }
 main aside .social-media img:hover {
   background-color: var(--primary-color);
@@ -228,14 +169,9 @@ main aside .social-media img:hover {
 
 main aside .social-media li a {
   text-decoration: none;
-  /* font-size: 1.5rem;
-    color: white;
-    
-    transition: all 0.1s ease-in-out; */
 }
 
 main aside .social-media li a:hover {
-  /* color: #89b0d9; */
   background-color: var(--primary-color);
   border-radius: var(--border-radius);
   color: var(--surface-on-background);
@@ -245,9 +181,7 @@ main aside .social-media li a:hover {
 main aside .social-media li a i {
   color: var(--primary-color);
   display: flex;
-  /* block-size: 100; */
   transition: all 0.3s ease;
-  /* margin: 8px 0px; */
   padding: 12px;
 
   font-size: 1.5em;
@@ -269,18 +203,13 @@ main #content #projects {
 main #content #projects .project-list {
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   gap: 2rem;
   margin-top: 3rem;
-
 }
 
 main #content #projects .project-list img.mockup-image {
   display: flex;
-  /* width: 300px; */
-  /* min-width: 250px; */
   width: 100%;
-  /* max-width: 1200px; */
   margin: auto;
 }
 
@@ -300,7 +229,6 @@ main #content #articles {
   margin-bottom: 64px;
   justify-content: center;
   align-items: center;
-  
 }
 
 main #content #articles .article-list {
@@ -312,8 +240,6 @@ main #content #articles .article-list {
 }
 
 main #content #articles .article-list .article-tile img {
-  /* width: 300px; */
-  /* min-width: 250px; */
   width: 100%;
   margin: auto;
   border-radius: var(--border-radius);
@@ -324,11 +250,9 @@ main #content #contact {
   flex-direction: column;
 
   background-color: var(--surface-on-background);
-  /* border-radius: var(--border-radius); */
 
   padding: 24px 0px;
   align-items: center;
-  /* text-align: center; */
 }
 
 main #content #contact .contact-layout {
@@ -355,12 +279,10 @@ textarea {
 }
 
 main #content #contact .contact-layout .contact-form {
-  /* margin: 16px; */
   display: flex;
   flex: 2;
   flex-direction: column;
   padding: 16px;
-  /* background-color: blue; */
 }
 
 main #content #contact .contact-form input,
@@ -373,10 +295,7 @@ textarea {
   margin: 8px 0 16px 0;
 }
 
-/* Cek nanti */
 main #content #contact .contact-form .text-box {
-  /* width: 500px;
-  max-width: 100%; */
   width: 100%;
   resize: vertical;
 }
@@ -391,7 +310,6 @@ main #content #contact .contact-form .send-btn {
 
   margin-top: 30px;
   width: 100%;
-  /* padding: 16 100px; */
 }
 
 main #content #contact .contact-form .send-btn:hover {
@@ -408,7 +326,6 @@ footer {
 footer #footer-container {
   display: flex;
   width: 100%;
-  /* max-width: 1200px; */
 
   margin-inline: auto;
   padding-block: 1rem;
@@ -417,8 +334,59 @@ footer #footer-container {
   align-items: center;
 }
 
-/* Medium devices (768px dan di bawahnya) */
-@media screen and (max-width: 768px) {
+/* 1920px / 16px = 120em */
+@media (max-width: 120em) {
+  #sidebar {
+    visibility: visible;
+  }
+}
+
+/* 1200px / 16px = 75em */
+@media (max-width: 75em) {
+  main #content #projects .project-list img.mockup-image {
+    width: 90%;
+  }
+  #sidebar {
+    visibility: visible;
+  }
+  main #content .title {
+    font-size: 3rem;
+  }
+  main #content #about .greeting p {
+    font-size: 1.1rem;
+  }
+}
+
+/* 980px / 16px = 61.25em */
+@media (max-width: 61.25em) {
+  main #content .title {
+    font-size: 2.5rem;
+  }
+  main #content #about {
+    gap: 2rem;
+  }
+
+  main #content #about .greeting p {
+    font-size: 1rem;
+  }
+
+  main #content #projects .project-list img.mockup-image {
+    width: 80%;
+  }
+
+  #sidebar {
+    visibility: visible;
+  }
+
+  main #content #contact .contact-layout .send-message-illustration img {
+    width: 350px;
+    min-width: 300px;
+    margin: auto;
+  }
+}
+
+/* 640px / 16px = 40em */
+@media (max-width: 40em) {
   header.navbar-container {
     flex-direction: column;
   }
@@ -426,10 +394,6 @@ footer #footer-container {
   header.navbar-container .nav-list ul {
     flex-wrap: wrap;
     column-gap: 0.5rem;
-  }
-
-  main {
-    /* padding: 1rem 2rem; */
   }
 
   main #content #about {
@@ -440,9 +404,13 @@ footer #footer-container {
   }
 
   main #content #contact .contact-layout .send-message-illustration img {
-    width: 200px;
-    min-width: 200px;
+    width: 400px;
+    min-width: 400px;
     margin: auto;
+  }
+
+  main aside {
+    visibility: visible;
   }
 
   main #content .title {
@@ -450,12 +418,18 @@ footer #footer-container {
   }
 
   main #content #about .greeting p {
-    font-size: 1rem;
-    margin-right: 0;
+    font-size: 0.9rem;
+    margin: 0rem 4rem;
   }
 
-  main #content #about .content-image {
+  main #content #about .content-image img {
+    width: 150px;
+    min-width: 100px;
+    margin: auto;
     order: -1;
+  }
+  main #content #projects .project-list img.mockup-image {
+    width: 100%;
   }
 
   main #content #articles .article-list {
@@ -475,5 +449,28 @@ footer #footer-container {
 
   footer #footer-container {
     flex-direction: column;
+  }
+}
+
+/* 480px / 16px = 30em */
+@media (max-width: 30em) {
+  main aside {
+    visibility: hidden;
+  }
+  main #content #projects {
+    padding: 0rem 1rem;
+  }
+  main #content #articles {
+    padding: 0rem 1rem;
+  }
+  main #content #about .greeting p {
+    font-size: 0.9rem;
+    margin: 0rem 2rem;
+  }
+
+  main #content #contact .contact-layout .send-message-illustration img {
+    width: 300px;
+    min-width: 300px;
+    margin: auto;
   }
 }
