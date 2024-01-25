@@ -27,7 +27,7 @@
     />
     <link
       rel="stylesheet"
-      href="https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css"
+      href="https://cdn-uicons.flaticon.com/2.1.0/uicons-brands/css/uicons-brands.css"
     />
     <!-- FONTS -->
     <link
@@ -43,22 +43,27 @@
   </head>
   <body>
     <!-- START HEADER -->
-    <header>
-      <!-- START NAV -->
-      <nav id="navbar">
-        <ul>
-          <li>
-            <a href="#welcome-section">About</a>
-          </li>
-          <li>
-            <a href="#projects">Project</a>
-          </li>
-          <li>
-            <a href="#contact-section">Contact</a>
-          </li>
-        </ul>
-      </nav>
-      <!-- END NAV -->
+    <header id="main-header">
+      <section class="navbar-container">
+        <!-- START NAV -->
+        <div class="logo">
+          <img src="assets/images/mikirinkode_logo.svg" alt="MikirinKode" />
+        </div>
+        <nav class="nav-list">
+          <ul>
+            <li>
+              <a href="#welcome">About</a>
+            </li>
+            <li>
+              <a href="#projects">Project</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- END NAV -->
+      </section>
     </header>
     <!-- END HEADER -->
 
@@ -67,16 +72,42 @@
       <!-- START CONTENT -->
       <div id="content">
         <article id="welcome">
-          <section>
-            <span>
-              <img src="/assets/images/phone.png" width="50%" />
-              <h1>Hello There</h1>
-            </span>
-            <p>
-              My name is Wafa, i'm a person who enjoy developing a mobile apps
-              📱 using kotlin and flutter. I also enjoy designing User
-              Interface.
-            </p>
+          <section id="hero">
+            <article class="hero1">
+              <section id="img-greeting">
+                <img src="/assets/images/phone.png" />
+              </section>
+              <section id="greeting">
+                <h2>Hello There</h2>
+                <p>
+                  My name is Wafa, i'm a person who enjoy developing a mobile
+                  apps 📱 using kotlin and flutter. I also enjoy designing User
+                  Interface.
+                </p>
+              </section>
+            </article>
+            <article id="statistics">
+              <section class="stats-card">
+                <p class="stat-count">9</p>
+                <p>Total Projects</p>
+              </section>
+              <section class="stats-card">
+                <p class="stat-count">7</p>
+                <p>Personal Projects</p>
+              </section>
+              <section class="stats-card">
+                <p class="stat-count">6</p>
+                <p>Kotlin Projects</p>
+              </section>
+              <section class="stats-card">
+                <p class="stat-count">3</p>
+                <p>Flutter Projects</p>
+              </section>
+              <section class="stats-card">
+                <p class="stat-count">2</p>
+                <p>Client Projects</p>
+              </section>
+            </article>
           </section>
         </article>
 
@@ -191,11 +222,11 @@
         </article>
 
         <article id="contact">
-          <div class="contact-form">
+          <section>
             <h2>Contact Me</h2>
 
             <form
-              class="contact"
+              class="contact-form"
               action="https://formspree.io/f/mgedjvew"
               method="POST"
             >
@@ -237,38 +268,45 @@
               />
               <input type="submit" class="send-btn" value="Send Message" />
             </form>
-          </div>
+          </section>
         </article>
       </div>
       <!-- END CONTENT -->
 
       <!-- START SIDE BAR -->
-      <aside id="sidebar">
+      <aside>
         <div class="social-media">
-          <a href="https://github.com/mikirinkode" target="_blank">
-            <i class="fi fi-brands-github"></i>
-          </a>
-        </div>
-        <div class="social-media">
-          <a
-            href="https://www.linkedin.com/in/muhammadwafaalausath/"
-            target="_blank"
-          >
-            <i class="fi fi-brands-linkedin"></i>
-          </a>
-        </div>
-        <div class="social-media">
-          <a href="https://mikirinkode.online/" target="_blank">
-            <i class="fi fi-sr-globe"></i>
-          </a>
-        </div>
-        <div class="social-media">
-          <a
-            href="https://play.google.com/store/apps/developer?id=MikirinKode"
-            target="_blank"
-          >
-            <i class="fa-brands fa-google-play"></i>
-          </a>
+          <ul>
+            <li>
+              <img src="assets/images/wafa.png" alt="Wafa" />
+            </li>
+            <li>
+              <a href="https://github.com/mikirinkode" target="_blank">
+                <i class="fi fi-brands-github"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/muhammadwafaalausath/"
+                target="_blank"
+              >
+                <i class="fi fi-brands-linkedin"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://mikirinkode.com/" target="_blank">
+                <i class="fi fi-sr-globe"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://play.google.com/store/apps/developer?id=Coolva"
+                target="_blank"
+              >
+                <i class="fa-brands fa-google-play"></i>
+              </a>
+            </li>
+          </ul>
         </div>
       </aside>
       <!-- END SIDE BAR -->
@@ -277,11 +315,13 @@
 
     <!-- START FOOTER -->
     <footer>
-      <span id="created-with">
-        Created with &ltCode/&gt &
-        <i class="fi fi-sr-heart" alt="love-icon"></i>
-      </span>
-      <span id="copyright"> &copy; 2021-2024 mikirinkode </span>
+      <section id="footer-container">
+        <span id="created-with">
+          Created with &ltCode/&gt &
+          <i class="fi fi-sr-heart" alt="love-icon"></i>
+        </span>
+        <span id="copyright"> &copy; 2021-2024 mikirinkode </span>
+      </section>
     </footer>
     <!-- END FOOTER -->
   </body>
