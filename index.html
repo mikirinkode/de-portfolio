@@ -59,7 +59,7 @@
 
     <main>
       <!-- START CONTENT -->
-      <div class="content">
+      <div id="content">
         <article id="about">
           <section class="content-image">
             <img src="assets/images/handphone.svg" alt="MikirinKode" />
@@ -86,6 +86,56 @@
 
         <article id="contact">
           <h1 class="title">Send Me A Message</h1>
+          <section class="contact-layout">
+            <section class="send-message-illustration">
+              <img src="assets/images/illustration_send_email.svg" alt="Send Image">
+            </section>
+            <section class="contact-form">
+              <form
+                class="contact"
+                action="https://formspree.io/f/mgedjvew"
+                method="POST"
+              >
+                <label
+                  >Name:
+                  <input
+                    id="name"
+                    class="text-box"
+                    type="text"
+                    name="name"
+                    placeholder="Your Name"
+                    required
+                /></label>
+                <label
+                  >Email:
+                  <input
+                    id="email"
+                    class="text-box"
+                    type="email"
+                    name="email"
+                    placeholder="example@mail.com"
+                    required
+                /></label>
+                <label
+                  >Message:
+                  <textarea
+                    id="message"
+                    name="message"
+                    class="text-box"
+                    rows="3"
+                    placeholder="Write your message here..."
+                  ></textarea>
+                </label>
+
+                <input
+                  type="hidden"
+                  name="_subject"
+                  value="Mail from Contact Form on github portfolio."
+                />
+                <input type="submit" class="send-btn" value="Send Message" />
+              </form>
+            </section>
+          </section>
         </article>
       </div>
       <!-- END CONTENT -->
