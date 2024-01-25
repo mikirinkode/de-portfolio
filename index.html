@@ -1,26 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta property="og:title" content="Wafa's Portfolio" />
-    <meta
-      property="og:image"
-      content="https://raw.githubusercontent.com/mikirinkode/mikirinkode.github.io/main/assets/thumbnail_porto.png"
-    />
+    <meta property="og:image" content="assets/images/thumbnail_porto.png" />
     <meta property="og:description" content="Personal portfolio" />
     <meta property="og:url" content="https://mikirinkode.github.io/" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="627" />
     <!-- TYPE BELOW IS PROBABLY: 'website' or 'article' or look on https://ogp.me/#types -->
     <meta property="og:type" content="website" />
-
     <title>MikirinKode</title>
 
-    <!-- MY OWN STYLES -->
+    <!-- THEMES -->
     <link rel="stylesheet" href="style.css" />
 
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <!-- ICONS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
     <link
       rel="stylesheet"
       href="https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css"
@@ -29,246 +33,59 @@
       rel="stylesheet"
       href="https://cdn-uicons.flaticon.com/2.1.0/uicons-brands/css/uicons-brands.css"
     />
-    <!-- FONTS -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
   </head>
   <body>
-    <!-- START HEADER -->
-    <header id="main-header">
-      <section class="navbar-container">
-        <!-- START NAV -->
-        <div class="logo">
-          <img src="assets/images/mikirinkode_logo.svg" alt="MikirinKode" />
-        </div>
-        <nav class="nav-list">
-          <ul>
-            <li>
-              <a href="#welcome">About</a>
-            </li>
-            <li>
-              <a href="#projects">Project</a>
-            </li>
-            <li>
-              <a href="#contact">Contact</a>
-            </li>
-          </ul>
-        </nav>
-        <!-- END NAV -->
-      </section>
+    <header class="navbar-container">
+      <div class="logo">
+        <img src="assets/images/mikirinkode_logo.svg" alt="MikirinKode" />
+      </div>
+      <nav class="nav-list">
+        <ul>
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="#projects">Projects</a>
+          </li>
+          <li>
+            <a href="#articles">Articles</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
     </header>
-    <!-- END HEADER -->
 
-    <!-- START MAIN -->
     <main>
       <!-- START CONTENT -->
-      <div id="content">
-        <article id="welcome">
-          <section id="hero">
-            <article class="hero1">
-              <section id="img-greeting">
-                <img src="/assets/images/phone.png" />
-              </section>
-              <section id="greeting">
-                <h2>Hello There</h2>
-                <p>
-                  My name is Wafa, i'm a person who enjoy developing a mobile
-                  apps 📱 using kotlin and flutter. I also enjoy designing User
-                  Interface.
-                </p>
-              </section>
-            </article>
-            <article id="statistics">
-              <section class="stats-card">
-                <p class="stat-count">9</p>
-                <p>Total Projects</p>
-              </section>
-              <section class="stats-card">
-                <p class="stat-count">7</p>
-                <p>Personal Projects</p>
-              </section>
-              <section class="stats-card">
-                <p class="stat-count">6</p>
-                <p>Kotlin Projects</p>
-              </section>
-              <section class="stats-card">
-                <p class="stat-count">3</p>
-                <p>Flutter Projects</p>
-              </section>
-              <section class="stats-card">
-                <p class="stat-count">2</p>
-                <p>Client Projects</p>
-              </section>
-            </article>
+      <div class="content">
+        <article id="about">
+          <section class="content-image">
+            <img src="assets/images/handphone.svg" alt="MikirinKode" />
+          </section>
+
+          <section class="greeting">
+            <h1 class="title">Hello There</h1>
+            <p>
+              My name is Wafa, i'm a person who enjoy developing a mobile apps
+              📱 using kotlin and flutter. I also enjoy designing User
+              Interface.
+            </p>
+
+            <button>My Projects</button>
           </section>
         </article>
-
         <article id="projects">
-          <section>
-            <h2>Things that i love to build with passion</h2>
-          </section>
-          <!-- ECTRO -->
-          <section class="project-tile">
-            <a
-              id="profile-link"
-              href="https://github.com/mikirinkode/ECTRO"
-              target="_blank"
-            >
-              <img
-                class="mockup-image"
-                alt="ECTRO App Mockup"
-                src="/assets/images/ectro.png"
-              />
-            </a>
-          </section>
-
-          <!-- CODEHUB -->
-          <section class="project-tile">
-            <a
-              id="profile-link"
-              href="https://github.com/mikirinkode/CodeHub-DicodingBFAA"
-              target="_blank"
-            >
-              <img
-                class="mockup-image"
-                alt="CodeHub App Mockup"
-                src="/assets/images/codehub.png"
-              />
-            </a>
-          </section>
-
-          <!-- KOTAKMOVIE -->
-          <section class="project-tile">
-            <a
-              id="profile-link"
-              href="https://play.google.com/store/apps/details?id=com.mikirinkode.kotakmovie"
-              target="_blank"
-            >
-              <img
-                class="mockup-image"
-                alt="KotakMovie App Mockup"
-                src="/assets/images/kotakmovie.png"
-              />
-            </a>
-          </section>
-
-          <!-- SPOD -->
-          <section class="project-tile">
-            <a
-              id="profile-link"
-              href="https://play.google.com/store/apps/details?id=com.mikirinkode.spod"
-              target="_blank"
-            >
-              <img
-                class="mockup-image"
-                alt="Spod App Mockup"
-                src="/assets/images/spod.png"
-              />
-            </a>
-          </section>
-
-          <!-- TEXT RECOGNITION -->
-          <section class="project-tile">
-            <a
-              id="profile-link"
-              href="https://github.com/mikirinkode/TextRecognition-Android"
-              target="_blank"
-            >
-              <img
-                class="mockup-image"
-                alt="Text Recognition App Mockup"
-                src="/assets/images/textrecognition.png"
-              />
-            </a>
-          </section>
-
-          <!-- METAPOL -->
-          <section class="project-tile">
-            <a
-              id="profile-link"
-              href="https://github.com/Coolva-ID/Metapol"
-              target="_blank"
-            >
-              <img
-                class="mockup-image"
-                alt="METAPOL App Mockup"
-                src="/assets/images/metapol.png"
-              />
-            </a>
-          </section>
-
-          <!-- FINANCIAR -->
-          <section class="project-tile">
-            <a
-              id="profile-link"
-              href="https://github.com/mikirinkode/Financiar"
-              target="_blank"
-            >
-              <img
-                class="mockup-image"
-                alt="FINANCIAR App Mockup"
-                src="/assets/images/financiar.png"
-              />
-            </a>
-          </section>
+          <h1 class="title">Things that i build with love</h1>
         </article>
 
+        <article id="articles">
+          <h1 class="title">Sharing some knowledge</h1>
+        </article>
+        
         <article id="contact">
-          <section>
-            <h2>Contact Me</h2>
-
-            <form
-              class="contact-form"
-              action="https://formspree.io/f/mgedjvew"
-              method="POST"
-            >
-              <label
-                >Name:
-                <input
-                  id="name"
-                  class="text-box"
-                  type="text"
-                  name="name"
-                  placeholder="Your Name"
-                  required
-              /></label>
-              <label
-                >Email:
-                <input
-                  id="email"
-                  class="text-box"
-                  type="email"
-                  name="email"
-                  placeholder="example@mail.com"
-                  required
-              /></label>
-              <label
-                >Message:
-                <textarea
-                  id="message"
-                  name="message"
-                  class="text-box"
-                  rows="3"
-                  placeholder="Write your message here..."
-                ></textarea>
-              </label>
-
-              <input
-                type="hidden"
-                name="_subject"
-                value="Mail from Contact Form on github portfolio."
-              />
-              <input type="submit" class="send-btn" value="Send Message" />
-            </form>
-          </section>
+          <h1 class="title">Send Me A Message</h1>
         </article>
       </div>
       <!-- END CONTENT -->
@@ -311,18 +128,5 @@
       </aside>
       <!-- END SIDE BAR -->
     </main>
-    <!-- END MAIN -->
-
-    <!-- START FOOTER -->
-    <footer>
-      <section id="footer-container">
-        <span id="created-with">
-          Created with &ltCode/&gt &
-          <i class="fi fi-sr-heart" alt="love-icon"></i>
-        </span>
-        <span id="copyright"> &copy; 2021-2024 mikirinkode </span>
-      </section>
-    </footer>
-    <!-- END FOOTER -->
   </body>
 </html>
