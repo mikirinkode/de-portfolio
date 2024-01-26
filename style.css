@@ -286,7 +286,7 @@ main #content #articles .article-list .article-tile .article-img:hover {
   border-radius: 0;
 }
 
-main button {
+main #content #articles button {
   color: var(--primary-color);
   background-color: var(--surface-on-background);
 
@@ -300,7 +300,7 @@ main button {
   border: none;
 }
 
-main button:hover {
+main #content #articles button:hover {
   font-weight: 600;
   background: var(--primary-color);
   color: var(--surface-on-background);
@@ -632,4 +632,23 @@ footer #footer-container {
     min-width: 300px;
     margin: auto;
   }
+}
+
+#scrollToTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: var(--primary-color);
+  color: #fff;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  display: none;
+}
+
+#scrollToTopBtn.show {
+  display: block;
 }
