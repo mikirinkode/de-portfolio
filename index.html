@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -48,6 +48,9 @@
           </li>
           <li>
             <a href="#articles">Articles</a>
+          </li>
+          <li>
+            <a href="#about">About</a>
           </li>
           <li>
             <a href="#contact">Contact</a>
@@ -245,8 +248,56 @@
           </a>
         </article>
 
+        <article id="about">
+          <section class="about-layout">
+            <h1 class="title">About Me</h1>
+            <section class="profile-section">
+              <img
+                class="profile-image"
+                src="assets/images/wafa.png"
+                alt="Wafa"
+              />
+              <section class="about-description">
+                <p>
+                  My name is Muhammad Wafa Al Ausath. I have been working as a
+                  Freelance Mobile Developer for a year. I am also studying
+                  Informatics Engineering at the University of Lampung. I have
+                  the skills to design, develop, debug, maintain, and update
+                  applications. I know how to use backend API services,
+                  Firebase, Dependency Injection, and Jetpack Compose to create
+                  Android UI and implement architecture.
+                </p>
+                <article id="statistics">
+                  <section class="stats-card">
+                    <span class="stat-count"
+                      ><span class="num" data-val="70">0</span>
+                      +
+                    </span>
+                    <p>Articles</p>
+                  </section>
+                  <section class="stats-card">
+                    <span class="stat-count">
+                      <span class="num" data-val="2">0</span>
+                      year
+                    </span>
+                    <p>Working Experience</p>
+                  </section>
+                  <section class="stats-card">
+                    <span class="num stat-count" data-val="5">0</span>
+                    <p>Industrial Projects</p>
+                  </section>
+                  <section class="stats-card">
+                    <span class="num stat-count" data-val="2">0</span>
+                    <p>Freelance Projects</p>
+                  </section>
+                </article>
+              </section>
+            </section>
+          </section>
+        </article>
+
         <article id="contact">
-          <h1 class="title">Send Me A Message</h1>
+          <h1 class="title">Let's Talk</h1>
           <section class="contact-layout">
             <section class="send-message-illustration">
               <img
@@ -301,7 +352,7 @@
             </section>
           </section>
         </article>
-        </div>
+      </div>
       <!-- END CONTENT -->
 
       <!-- START SIDE BAR -->
@@ -309,7 +360,9 @@
         <div class="social-media">
           <ul>
             <li>
-              <img src="assets/images/wafa.png" alt="Wafa" />
+              <a href="#about">
+                <img src="assets/images/wafa.png" alt="Wafa" />
+              </a>
             </li>
             <li>
               <a href="https://github.com/mikirinkode" target="_blank">
@@ -353,7 +406,9 @@
       </section>
     </footer>
     <!-- END FOOTER -->
-    <button onclick="scrollToTop()" id="scrollToTopBtn" title="Go to Top">&#8593;</button>
+    <button onclick="scrollToTop()" id="scrollToTopBtn" title="Go to Top">
+      &#8593;
+    </button>
     <script src="script.js"></script>
   </body>
 </html>

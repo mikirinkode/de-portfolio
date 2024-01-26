@@ -306,6 +306,79 @@ main #content #articles button:hover {
   color: var(--surface-on-background);
 }
 
+main #content #about {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1200px;
+  padding: 2rem 4rem;
+  margin-right: 3rem;
+  margin-bottom: 4rem;
+  margin-inline: auto;
+}
+
+main #content #about .about-layout {
+  justify-content: center;
+  gap: 1rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 4rem;
+  background-color: var(--surface-on-background);
+  border-radius: var(--border-radius);
+}
+
+main #content #about .about-layout .profile-section {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  gap: 1rem;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+
+main #content #about .about-layout .profile-section img {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex: 1;
+}
+main #content #about .about-layout .profile-section .about-description {
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+main #content #about .about-layout .profile-section #statistics {
+  display: flex;
+}
+
+main #content #about .about-layout .profile-section #statistics {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  align-content: center;
+  /* justify-content: space-between; */
+  gap: 1rem;
+}
+
+main #content #about .about-layout .profile-section #statistics .stats-card {
+  padding: 16px;
+  border-radius: var(--border-radius);
+  background-color: var(--card-background-color);
+}
+
+main #content #about .about-layout .profile-section #statistics .stats-card {
+  font-size: smaller;
+}
+
+main #content #about .about-layout .profile-section #statistics .stats-card span.stat-count {
+  color: var(--primary-color);
+  padding: 8px;
+  font-size: x-large;
+  font-weight: bold;
+}
+
 main #content #contact {
   display: flex;
   flex-direction: column;
@@ -431,6 +504,13 @@ footer #footer-container {
   main #content #sample-project-video .video-layout iframe {
     width: 560px;
     height: 315px;
+  }
+
+  main #content #about {
+    /* margin: 20rem 20rem; */
+  }
+
+  main #content #about .profile-section .about-description {
   }
 }
 
