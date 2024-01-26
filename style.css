@@ -93,9 +93,9 @@ h1:nth-of-type(n + 2) {
   text-align: center;
 }
 
-main #content #about {
-  padding: 2rem 4rem;
-  height: 100vh;
+main #content #home {
+  padding: 8rem 4rem;
+  /* height: 100vh; */
 
   flex: 1;
   display: flex;
@@ -104,25 +104,25 @@ main #content #about {
   background-color: var(--surface-on-background);
 }
 
-main #content #about .content-image {
+main #content #home .content-image {
   flex: 1;
   display: flex;
 }
 
-main #content #about .content-image img {
+main #content #home .content-image img {
   width: 300px;
   min-width: 250px;
   margin: auto;
 }
 
-main #content #about .greeting {
+main #content #home .greeting {
   flex: 2 1;
 }
-main #content #about .title {
+main #content #home .title {
   color: var(--primary-color);
 }
 
-main #content #about .greeting p {
+main #content #home .greeting p {
   font-size: 1.2rem;
   line-height: 1.7rem;
   margin-right: 25%;
@@ -312,7 +312,7 @@ main #content #contact {
 
   background-color: var(--surface-on-background);
 
-  padding: 24px 0px;
+  padding: 4rem 0rem;
   align-items: center;
 }
 
@@ -400,6 +400,9 @@ footer #footer-container {
   #sidebar {
     visibility: visible;
   }
+  main #content #home {
+    padding: 8rem 4rem;
+  }
   main #content #sample-project-video .video-layout iframe {
     width: 640px;
     height: 360px;
@@ -414,10 +417,14 @@ footer #footer-container {
   #sidebar {
     visibility: visible;
   }
+  main #content #home {
+    gap: 2rem;
+    padding: 6rem 4rem;
+  }
   main #content .title {
     font-size: 3rem;
   }
-  main #content #about .greeting p {
+  main #content #home .greeting p {
     font-size: 1.1rem;
   }
 
@@ -432,12 +439,19 @@ footer #footer-container {
   main #content .title {
     font-size: 2.5rem;
   }
-  main #content #about {
+  main #content #home {
     gap: 2rem;
   }
 
-  main #content #about .greeting p {
+  main #content #home .greeting p {
     font-size: 1rem;
+  }
+
+  main #content #home .content-image img {
+    width: 200px;
+    min-width: 150px;
+    margin: auto;
+    order: -1;
   }
 
   main #content #projects .project-list img.mockup-image {
@@ -490,11 +504,11 @@ footer #footer-container {
     column-gap: 0.5rem;
   }
 
-  main #content #about {
+  main #content #home {
     flex-direction: column;
     text-align: center;
     gap: 2rem;
-    padding: 2rem 0rem;
+    /* padding: 2rem 0rem; */
   }
 
   main #content #contact .contact-layout .send-message-illustration img {
@@ -511,12 +525,12 @@ footer #footer-container {
     font-size: 1.5rem;
   }
 
-  main #content #about .greeting p {
+  main #content #home .greeting p {
     font-size: 0.9rem;
     margin: 0rem 4rem;
   }
 
-  main #content #about .content-image img {
+  main #content #home .content-image img {
     width: 150px;
     min-width: 100px;
     margin: auto;
@@ -573,15 +587,21 @@ footer #footer-container {
   main aside {
     visibility: hidden;
   }
+  main #content #home .content-image img {
+    width: 125px;
+    min-width: 75px;
+    margin: auto;
+    order: -1;
+  }
+  main #content #home .greeting p {
+    font-size: 0.9rem;
+    margin: 0rem 2rem;
+  }
   main #content #projects {
     padding: 0rem 1rem;
   }
   main #content #articles {
     padding: 0rem 1rem;
-  }
-  main #content #about .greeting p {
-    font-size: 0.9rem;
-    margin: 0rem 2rem;
   }
 
   main #content #sample-project-video .video-layout {
