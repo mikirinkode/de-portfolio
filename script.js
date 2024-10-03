@@ -43,47 +43,77 @@ observer.observe(aboutElement);
 
 let projects = [
   {
+    name: "QuestMD",
+    link: "https://play.google.com/store/apps/details?id=id.questmd.app",
+    image: "/assets/images/projects/questmd.png",
+    alt: "QuestMD App",
+  },
+  {
+    name: "Sewanue",
+    link: "https://play.google.com/store/apps/details?id=com.sewanue.sewanue",
+    image: "/assets/images/projects/sewanue.png",
+    alt: "Sewanue App",
+  },
+  {
+    name: "TrackThisJob",
+    link: "https://play.google.com/store/apps/details?id=com.coolva.trackthisjob",
+    image: "/assets/images/projects/trackthisjob.png",
+    alt: "TrackThisJob App",
+  },
+  {
+    name: "Pikul",
+    link: "https://youtu.be/CAmM8bM1W80?si=q-4cogcCwB_Iqygw",
+    image: "/assets/images/projects/pikul.png",
+    alt: "Pikul App",
+  },
+  {
+    name: "LatihSpeaking",
+    link: "https://play.google.com/store/apps/details?id=com.coolva.speaking",
+    image: "/assets/images/projects/latihspeaking.png",
+    alt: "Latih Speaking App",
+  },
+  {
     name: "ECTRO",
     link: "https://github.com/mikirinkode/ECTRO",
-    image: "/assets/images/mockups/ectro.png",
-    alt: "ECTRO App Mockup",
-  },
-  {
-    name: "CodeHub",
-    link: "https://github.com/mikirinkode/CodeHub-DicodingBFAA",
-    image: "/assets/images/mockups/codehub.png",
-    alt: "CodeHub App Mockup",
-  },
-  {
-    name: "KotakMovie",
-    link: "https://play.google.com/store/apps/details?id=com.mikirinkode.kotakmovie",
-    image: "/assets/images/mockups/kotakmovie.png",
-    alt: "KotakMovie App Mockup",
-  },
-  {
-    name: "Spod",
-    link: "https://play.google.com/store/apps/details?id=com.mikirinkode.spod",
-    image: "/assets/images/mockups/spod.png",
-    alt: "Spod App Mockup",
-  },
-  {
-    name: "Text Recognition",
-    link: "https://github.com/mikirinkode/TextRecognition-Android",
-    image: "/assets/images/mockups/textrecognition.png",
-    alt: "Text Recognition App Mockup",
+    image: "/assets/images/projects/ectro.png",
+    alt: "ECTRO App",
   },
   {
     name: "METAPOL",
     link: "https://github.com/Coolva-ID/Metapol",
-    image: "/assets/images/mockups/metapol.png",
-    alt: "METAPOL App Mockup",
+    image: "/assets/images/projects/metapol.png",
+    alt: "METAPOL App",
   },
-  {
-    name: "FINANCIAR",
-    link: "https://github.com/mikirinkode/Financiar",
-    image: "/assets/images/mockups/financiar.png",
-    alt: "FINANCIAR App Mockup",
-  },
+  // {
+  //   name: "CodeHub",
+  //   link: "https://github.com/mikirinkode/CodeHub-DicodingBFAA",
+  //   image: "/assets/images/mockups/codehub.png",
+  //   alt: "CodeHub App Mockup",
+  // },
+  // {
+  //   name: "KotakMovie",
+  //   link: "https://play.google.com/store/apps/details?id=com.mikirinkode.kotakmovie",
+  //   image: "/assets/images/mockups/kotakmovie.png",
+  //   alt: "KotakMovie App Mockup",
+  // },
+  // {
+  //   name: "Spod",
+  //   link: "https://play.google.com/store/apps/details?id=com.mikirinkode.spod",
+  //   image: "/assets/images/mockups/spod.png",
+  //   alt: "Spod App Mockup",
+  // },
+  // {
+  //   name: "Text Recognition",
+  //   link: "https://github.com/mikirinkode/TextRecognition-Android",
+  //   image: "/assets/images/mockups/textrecognition.png",
+  //   alt: "Text Recognition App Mockup",
+  // },
+  // {
+  //   name: "FINANCIAR",
+  //   link: "https://github.com/mikirinkode/Financiar",
+  //   image: "/assets/images/mockups/financiar.png",
+  //   alt: "FINANCIAR App Mockup",
+  // },
 ];
 
 let projectList = document.querySelector(".project-list");
